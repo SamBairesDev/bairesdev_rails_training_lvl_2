@@ -38,12 +38,12 @@
 
   <div class="field">
     <%= form.label :company_id %>
-    <%= form.text_field :company_id %>
+    <%= form.collection_select :company_id, Company.all, :id, :name %>
   </div>
 
   <div class="field">
     <%= form.label :genre_id %>
-    <%= form.text_field :genre_id %>
+    <%= form.collection_select :genre_id, Genre.all, :id, :name %>
   </div>
 
   <div class="actions">

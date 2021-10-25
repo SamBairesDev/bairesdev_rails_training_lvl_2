@@ -20,8 +20,8 @@
         <td><%= game.name %></td>
         <td><%= game.price %></td>
         <td><%= game.description %></td>
-        <td><%= game.company_id %></td>
-        <td><%= game.platform_id %></td>
+        <td><%= game.company.name %></td>
+        <td><%= game.platform.name %></td>
         <td><%= link_to 'Show', game %></td>
         <td><%= link_to 'Edit', edit_game_path(game) %></td>
         <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
