@@ -4,4 +4,5 @@ class Game < ApplicationRecord
 
   validates :name, presence: true
   validates :price, presence: true
+  validates :description, length: 0..250
 end
