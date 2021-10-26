@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.collection_select :name, Platform.names, :first, :second %>
   </div>
 
   <div class="actions">
